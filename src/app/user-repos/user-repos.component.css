@@ -1,0 +1,37 @@
+.cardView 
+{
+    background-color: #fffffa;
+    width:100%;
+    height:auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    border-radius: 7px;
+    text-align: left;
+    padding: 5px;
+   
+}
+
+.cardView:hover
+{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+    background-color: #ffffff;
+}
+
+.parent-div
+{
+    margin: 10px;
+}
+
+.card-margin 
+{
+    margin-top: 10px;
+}
+
+.text-color
+{
+    color: #5b5b5b;
+}
+
+.name-center
+{
+    text-align: center;
+}
