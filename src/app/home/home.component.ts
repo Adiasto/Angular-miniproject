@@ -15,11 +15,15 @@ export class HomeComponent implements OnInit {
   constructor(private _content:ContentFetchService,private router:Router,private constants:AppConstant){}
   ngOnInit()
   {
+    this.getInfo();
+  }
+
+  getInfo()
+  {
     this._content.getInfo().subscribe(datapoint=>this.data=datapoint);
   }
   showInfo(login:string)
   {
     this.router.navigate(['home',login]);
-    this.constants.loginUser=login;
   }
 }

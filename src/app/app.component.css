@@ -1,7 +1,6 @@
 .header
 {
     background-color: #fafafa;
-    padding: 5px;
     border-radius: 7px;
 }
 
@@ -10,15 +9,15 @@
     position: fixed;
     bottom: 0;
     width:100%;
-    border-radius: 3px;
+    text-align: center;
 }
 
 .width-full
 {
     width:100%;
     background-color: #000000;
-    padding-left: 10%;
     color: #ffffff;
+    height: 20px;
 }
 
 .navigation
@@ -26,8 +25,8 @@
     background-color: #c2c2c2; 
     width:100%;
     border-radius: 7px;
-
-
+    padding:5px 0 0 0;
+    position: fixed;
 }
 
 .nav-button
@@ -42,14 +41,17 @@
 
 .component-margin-top
 {
-    margin-top: 30px;
+    padding: 10px;
+    width: auto;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .background-setup
 {
-    background-color: #fafafa;
-        border-radius: 7px;
-
+    background-color: #cfffff;
+    border-radius: 7px;
+    height: 100%;
 }
 
 .buttons

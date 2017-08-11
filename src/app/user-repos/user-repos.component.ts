@@ -14,11 +14,16 @@ export class UserReposComponent implements OnInit {
 
   constructor(private _content:ContentFetchService,private _rout:ActivatedRoute,private constants:AppConstant) { }
 
+  login:string="";
   _repos:Observable<any>;
 
   ngOnInit() {
-    let login = this.constants.loginUser;
-    this._content.getRepository(login).subscribe(Repos=>this._repos=Repos);
+    this.getRepository();
   }
 
+  getRepository()
+  {
+    this.login=this._rout.snapshot.params['login'];
+    this._content.getRepository(this.login).subscribe(Repos=>this._repos=Repos);
+  }
 }

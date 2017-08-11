@@ -1,12 +1,11 @@
 
 <div class="background-setup">
 <div class="navigation">
-  <h1 class="header">Github UserBase</h1>
-  <button class="buttons" routerLink="/home" routerLinkActive="active">Home</button>
+  <button class="buttons" (click)="homeClicked()">Home</button>
   <button class="buttons" routerLink="/about" routerLinkActive="active">About</button>
 </div>
 <div class="component-margin-top">
-<router-outlet></router-outlet>
+<router-outlet ></router-outlet>
 </div>
-<footer class="footer"><div class="width-full">&copy;github.com</div></footer>
+<footer class="footer"><div class="width-full"></div><div class="width-full">&copy;github.com</div></footer>
 </div>

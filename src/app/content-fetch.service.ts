@@ -6,7 +6,7 @@ import {AppConstant} from './app.constant';
 @Injectable()
 export class ContentFetchService {
   constructor(private _http:Http,private constants:AppConstant) { }
-   private _url:string=this.constants.baseURL;
+   private _url:string=this.constants.BASEURL;
   getInfo()
   {
     return this._http.get(this._url).map((response:Response)=>response.json());

@@ -1,9 +1,12 @@
-<img class="img-size" src='{{UsersData.avatar_url}}'/>
-<h2 class="user-name">{{UsersData.name}}</h2>
+<div class="card"><table>
+<tr><td><img class="img-size" src='{{UsersData.avatar_url}}'/></td>
+<td><h2 class="user-name">{{UsersData.name}}</h2></td><tr>
+</table>
 <table>
-<tr><td class="td-width">UserName:</td><td>{{UsersData.login}}</td></tr>
-<tr><td class="td-width">Location:</td><td>{{UsersData.location}}</td></tr>
-<tr><td class="td-width">Company:</td><td>{{UsersData.company}}</td></tr>
-<tr><td class="td-width">BlogLink:</td><td>{{UsersData.blog}}</td></tr>
+<tr><td class="td-width"><b>Username</b></td><td><p>{{UsersData.login}}</p></td></tr>
+<tr><td class="td-width"><b>Location</b></td><td><p>{{UsersData.location}}</p></td></tr>
+<tr><td class="td-width"><b>Company</b></td><td><p>{{UsersData.company}}</p></td></tr>
+<tr><td class="td-width"><b>BlogLink</b></td><td><p>{{UsersData.blog}}</p></td></tr>
 </table>
 <button (click)="showRepo()" class="button-center">show repo</button>
+</div>

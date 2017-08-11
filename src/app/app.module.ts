@@ -10,6 +10,7 @@ import {AboutComponent} from './about/about.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { UserReposComponent } from './user-repos/user-repos.component'
 import {AppConstant} from './app.constant'
+import {AppRouterModule} from './app.routerModule'
 
 @NgModule({
   declarations: [
@@ -23,14 +24,7 @@ import {AppConstant} from './app.constant'
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(
-    [
-      {path:'',component:HomeComponent},
-      {path:'home',component:HomeComponent},
-      {path:'about',component:AboutComponent},
-      {path: 'home/:login', component:UserInfoComponent},
-      {path: 'home/login/repos', component:UserReposComponent}
-    ])
+    AppRouterModule
   ],
   providers: [ContentFetchService,AppConstant],
   bootstrap: [AppComponent]

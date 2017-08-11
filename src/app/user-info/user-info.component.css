@@ -1,6 +1,6 @@
 .td-width
 {
-    width: 60%;
+    width: 70%;
     margin: 10px;
     padding: 10px;
 }
@@ -17,6 +17,24 @@
 
 .img-size
 {
-    width: 150px;
-    height:150px;
+    width: 50px;
+    height:50px;
+    border-radius: 25px;
+}
+
+.card
+{
+    margin: 5px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    height:60%;
+    padding: 10px; 
+    margin-top: 4%;
+}
+
+p
+{
+    color: #999999;
+    font-size: 1.01em;
 }
