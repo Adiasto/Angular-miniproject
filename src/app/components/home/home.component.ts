@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ContentFetchService} from 'app/content-fetch.service'
+import {ContentFetchService} from 'app/services/content-fetch.service'
 import {Router} from "@angular/router";
 import {AppConstant} from 'app/app.constant';
 
@@ -12,7 +12,8 @@ import {AppConstant} from 'app/app.constant';
 export class HomeComponent implements OnInit {
 
   data=[]
-  constructor(private _content:ContentFetchService,private router:Router,private constants:AppConstant){}
+  loading=false
+  constructor(private content:ContentFetchService,private router:Router,private constants:AppConstant){}
   ngOnInit()
   {
     this.getInfo();
@@ -20,7 +21,7 @@ export class HomeComponent implements OnInit {
 
   getInfo()
   {
-    this._content.getInfo().subscribe(datapoint=>this.data=datapoint);
+    this.content.getInfo().subscribe(datapoint=>this.data=datapoint);
   }
   showInfo(login:string)
   {

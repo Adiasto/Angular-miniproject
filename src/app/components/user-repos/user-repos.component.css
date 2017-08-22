@@ -4,7 +4,7 @@
     width:100%;
     height:auto;
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    border-radius: 7px;
+    border-radius: 10px;
     text-align: left;
     padding: 5px;
    
@@ -23,7 +23,7 @@
 
 .card-margin 
 {
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .text-color
@@ -34,4 +34,22 @@
 .name-center
 {
     text-align: center;
+}
+
+.extra-margin-top
+{
+    height: 65px;
+}
+
+.scrollable-view
+{
+    overflow-y: scroll;
+    height: 690px;
+    padding: 0px 40px 10px 40px;
+}
+
+.content-margin
+{
+    height: 10px;
+    width: 100%;
 }

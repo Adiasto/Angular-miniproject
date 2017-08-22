@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import {ContentFetchService} from "./content-fetch.service"
+import {ContentFetchService} from "./services/content-fetch.service"
 import {Router} from '@angular/router'
 
 @Component({
@@ -10,7 +10,7 @@ import {Router} from '@angular/router'
 })
 export class AppComponent{
    data=[];
-   constructor(private _content:ContentFetchService,private _router:Router){}
+   constructor(private content:ContentFetchService,private router:Router){}
    ngOnInit()
    {
      this.getInfo();
@@ -18,11 +18,11 @@ export class AppComponent{
 
    getInfo()
    {
-     this._content.getInfo().subscribe(datapoint=>this.data=datapoint);
+     this.content.getInfo().subscribe(datapoint=>this.data=datapoint);
    }
   homeClicked()
   {
-    this._router.navigate(['/home']);
+     this.router.navigate(['/home']);
   }
 
 }

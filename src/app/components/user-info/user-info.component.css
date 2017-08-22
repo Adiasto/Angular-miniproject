@@ -1,0 +1,94 @@
+.td-width
+{
+    width: 70%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.button-center
+{
+    margin-left:45%;
+    margin-top: 30px;
+}
+
+.user-name
+{
+    margin: 20px;
+}
+
+.img-size
+{
+    width: 50px;
+    height:50px;
+    border-radius: 25px;
+}
+
+.card
+{
+    margin: 3%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    height:56%;
+    padding: 10px; 
+    margin-top: 7%;
+}
+
+.extra-margin-top
+{
+    height:40px;
+}
+
+p
+{
+    color: #999999;
+    font-size: 1.01em;
+}
+
+.button-design
+{
+    padding: 10px 15px 10px 15px;
+    background-color: #9a01ff;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.4em;
+}
+
+.user-info-bar-view1
+{
+    width: 33%;
+    padding: 7px;
+    color: #ffffff;
+    background-color: #6600ff
+}
+
+.user-info-bar-view2
+{
+    width: 33%;
+    padding: 7px;
+    color: #ffffff;
+    background-color: #4aff1a;
+}
+
+.user-info-bar-view3
+{
+    width: 33%;
+    padding: 7px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.table-width tr
+{
+    width:100%;
+}
+
+.table-width
+{
+    width:100%;
+}
+
+.wrap-width
+{
+    width: 100%;
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ContentFetchService} from 'app/content-fetch.service';
+import { ContentFetchService} from 'app/services/content-fetch.service';
 import { ActivatedRoute} from "@angular/router"
 import {Observable} from "rxjs/Observable"
 import {AppConstant} from 'app/app.constant'
@@ -12,10 +12,10 @@ import {AppConstant} from 'app/app.constant'
 export class UserReposComponent implements OnInit {
 
 
-  constructor(private _content:ContentFetchService,private _rout:ActivatedRoute,private constants:AppConstant) { }
+  constructor(private content:ContentFetchService,private rout:ActivatedRoute,private constants:AppConstant) { }
 
   login:string="";
-  _repos:Observable<any>;
+  repos:Observable<any>;
 
   ngOnInit() {
     this.getRepository();
@@ -23,7 +23,7 @@ export class UserReposComponent implements OnInit {
 
   getRepository()
   {
-    this.login=this._rout.snapshot.params['login'];
-    this._content.getRepository(this.login).subscribe(Repos=>this._repos=Repos);
+    this.login=this.rout.snapshot.params['login'];
+    this.content.getRepository(this.login).subscribe(Repos=>this.repos=Repos);
   }
 }

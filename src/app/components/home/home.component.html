@@ -1,0 +1,6 @@
+
+<div class="extra-margin-top"></div> 
+<div class="heading"><p>GitHub Users</p></div>
+<div class="card-holder">
+<button *ngFor="let elem of data" (click)="showInfo(elem.login)"  class="cardView"><table><tr><td><img class="avatar-size" src='{{elem.avatar_url}}'/></td><td>{{elem.login}}</td></tr></table></button>
+</div>

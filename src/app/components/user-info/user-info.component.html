@@ -1,0 +1,22 @@
+<div class="extra-margin-top"></div>
+<div class="card"><table>
+<tr><td><img class="img-size" src='{{UsersData.avatar_url}}'/></td>
+<td><h2 class="user-name">{{UsersData.name}}</h2></td><tr>
+</table>
+<table>
+<tr><td class="td-width"><b>Username</b></td><td><p>{{UsersData.login==null || UsersData.login==" "?'NA':UsersData.login}}</p></td></tr>
+<tr><td class="td-width"><b>Location</b></td><td><p>{{UsersData.location==null || UsersData.location==" "?'NA':UsersData.location}}</p></td></tr>
+<tr><td class="td-width"><b>Company</b></td><td><p>{{UsersData.company==null || UsersData.company==" "?'NA':UsersData.company}}</p></td></tr>
+<tr><td class="td-width"><b>BlogLink</b></td><td><p>{{UsersData.blog==null || UsersData.blog==""?'NA':UsersData.blog}}</p></td></tr>
+</table>
+<div class="wrap-width">
+<table class="table-width">
+    <tr>
+        <td class="user-info-bar-view1">{{UsersData.public_repos}}  Public Repos</td>
+        <td class="user-info-bar-view2">{{UsersData.followers}}  Followers</td>
+        <td class="user-info-bar-view3">{{UsersData.following}}  Following</td>
+    </tr>
+</table>
+</div>
+<button (click)="showRepo()" class="button-center button-design">VIEW REPO</button>
+</div>
